@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NxtGen Auto Details</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+  rel="stylesheet"
+ 
+/>
+    <script
+      src="https://kit.fontawesome.com/007b3d5afc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+  
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/slogan Updated.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header" class="highlight-link">Home</a></li>
+            <li><a href="#about" class="highlight-link">About</a></li>
+            <li><a href="#services" class="highlight-link">Services</a></li>
+            <li><a href="#portfolio" class="highlight-link">Our Work</a></li>
+            <li><a href="#contact" class="highlight-link btn3">Book Now</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Professional Mobile Detailing Company</p>
+          <h1>Welcome to<br />NxtGen Auto <br />Details!</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/caddy 2.PNG" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Us</h1>
+            <p>
+              Located in the heart of Dearborn, Michigan, NxtGen Auto Details
+              stands as a beacon of innovation in automotive care. Founded by a
+              trio of enthusiasts united by a shared passion for cars, our
+              company has quickly become a cornerstone in the community for
+              those who demand nothing but the best for their vehicles. With
+              backgrounds that span the spectrum of automotive expertise, our
+              partners bring a unique blend of skills, knowledge, and dedication
+              to the table. This diverse foundation allows us to offer a range
+              of detailing services unparalleled in quality and attention to
+              detail. From meticulous hand washes to comprehensive interior and
+              exterior detailing, NxtGen Auto Details ensures every vehicle we
+              touch is treated with the utmost care and professionalism. At
+              NxtGen Auto Details, we believe in more than just cleaning cars;
+              we strive to create an experience that reflects our deep respect
+              for the automotive industry and the people who drive its progress.
+              It's not just about the shine—it's about fostering a community of
+              car enthusiasts who appreciate the artistry and engineering behind
+              every vehicle. Enjoy the NxtGen Difference! Join us in Dearborn,
+              and let us show you what it means to treat your vehicle with the
+              care and respect it deserves.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('reviews')">Reviews</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Detailing techniques</span><br />Proficiency in
+                  vacuuming, shampooing, stain removal, and odor elimination.
+                  Mastery in applying protectants to interiors to prevent damage
+                  from UV rays and general wear and tear.
+                </li>
+                <li>
+                  <span>Chemical Use and Safety</span><br />Knowledge of the
+                  chemicals used in the detailing process, understanding their
+                  potential hazards, and knowing how to use them safely and
+                  effectively.
+                </li>
+                <li>
+                  <span>Knowledge of Paint Types and Conditions</span
+                  ><br />Understanding different types of automotive paint and
+                  coatings, including clear coats, and recognizing signs of
+                  oxidation, swirl marks, and scratches.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Established in 2023</span><br />In 2023, NxtGen Auto
+                  Details emerged as a pioneering force in automotive care in
+                  Dearborn, Michigan, captivating the local market with its
+                  innovative detailing services and a passionate commitment to
+                  vehicle aesthetics and performance.
+                </li>
+                <li>
+                  <span>Local Clients</span><br />NxtGen Auto Details began its
+                  journey in the vibrant automotive community of Dearborn,
+                  Michigan, quickly earning a reputation for excellence and
+                  innovation among local car enthusiasts through word-of-mouth
+                  and exceptional service.
+                </li>
+                <li>
+                  <span>Car Dealerships</span><br />Expanding its reach and
+                  expertise, NxtGen Auto Details forged strategic partnerships
+                  with leading car dealerships, elevating the standard of
+                  automotive detailing and customer satisfaction through
+                  collaborative service offerings and unparalleled attention to
+                  detail.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="reviews">
+              <div class="container">
+                  <div class="row">
+                      <div class="reviews-left">
+                          <h1 class="sub-title">Leave a Review</h1>
+                          <p>We appreciate your feedback!</p>
+                      </div>
+                      <div class="reviews-right">
+                          <form name="submit-review-form" id="submit-review-form">
+                              <input type="text" name="name" placeholder="Your Name" required />
+                              <input type="text" name="service" placeholder="Service Provided" required/>
+                              <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+                              <button type="submit" class="btn btn2">Submit Review</button>
+                          </form>
+                          <span id="review-msg"></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <h2>Bronze Package</h2>
+            <p>
+              For a quick and straightforward clean, the Bronze Package is
+              ideal, offering a deep vacuum, interior and exterior window
+              cleaning, dashboard wipe-down, handwash, and rims and tires
+              cleaning.
+            </p>
+            <a href="flyers.html">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <h2>Silver Package</h2>
+            <p>
+              Elevating your vehicle care, the Silver Package builds on the
+              Bronze with added stain removal and deep cleaning options for the
+              interior, plus a luxurious foam bath and rim polish for a gleaming
+              exterior.
+            </p>
+            <a href="flyers2.html">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <h2>Gold Package</h2>
+            <p>
+              For the ultimate vehicle transformation, our Gold Package
+              surpasses the Silver, offering steam sanitation and leather
+              conditioning for the interior, alongside ceramic coating and water
+              repelling treatments for a pristine and protected exterior.
+            </p>
+            <a href="flyers3.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Our Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/caddtINT.png" />
+            <div class="layer">
+              <h3>Interior Cleaning</h3>
+              <p>
+                Step inside a Cadillac Escalade that showcases a spotless
+                dashboard and leather seats conditioned to perfection, offering
+                a level of comfort and luxury that makes every ride feel
+                special. Every element, from the meticulously polished surfaces
+                to the soft, inviting leather, has been thoughtfully curated to
+                ensure your journey is as enjoyable as your destination.
+              </p>
+              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            
+<video autoplay muted loop playsinline>
+  <source
+    src="videos/f6db5a95-fb70-403b-ae70-e4ff0c7a6631.MP4"
+    type="video/mp4"
+  />
+</video>
+
+            <div class="layer">
+              <h3>Exterior Cleaning</h3>
+              <p>
+                We lavished the exterior of a Mercedes AMG with a luxurious foam
+                bath, complemented by a meticulous handwash that gently lifted
+                away every speck of dirt, ensuring the car's sleek lines and
+                curves gleamed with a newfound brilliance. The finishing touch
+                was a precise polish of the rims and tires, accentuating their
+                luster and enhancing the vehicle's overall majestic presence on
+                the road.
+
+              </p>
+              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/mua.png" />
+            <div class="layer">
+              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+              <h3>Interior Cleaning</h3>
+              <p>We thoroughly detailed a Silverado, using an extractor for a
+                deep carpet clean and applying specialized treatments to protect
+                and shine the dashboard, showcasing our dedication to quality
+                and precision.
+</p>
+          </div>
+        </div>
+    
+      </div>
+      <a href="https://www.instagram.com/nxtgenautodetails/" class="btn">See More!</a>
+    </div>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Us</h1>
+        <p><i class="fa-solid fa-envelope"></i> NxtGenAutoDetail@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 313-704-0403</p>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook" target="_blank"></i></a>
+          <a href="https://www.instagram.com/nxtgenautodetails/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.yelp.com/biz/nxtgen-auto-details-dearborn" target="_blank"><i class="fa-brands fa-yelp" ></i></a>
+          <a href="https://www.tiktok.com/@nxtgenautodetails" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <a href="images/myCV.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required/>
+           <input type="phone" name="Number" placeholder="Your Phone Number" required/>
+           <textarea name="Message" rows="6" placeholder="Please inlcude desired package, date/time and any other concerns" ></textarea>
+           <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p><i class="fa-solid fa-circle-info"></i> Copyright @ 2024 NxtGenAutoDetail. All rights reserved</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        // Remove the active-link class from all tab links
+        for (let tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        // Remove the active-tab class from all tab contents
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        // Add the active-link class to the clicked tab link
+        // Note: This assumes you have a way to identify which tab link corresponds to the tabname. You might need to adjust this logic.
+        document
+          .querySelector(`.tab-links[onclick="opentab('${tabname}')"]`)
+          .classList.add("active-link");
+
+        // Add the active-tab class to the corresponding tab content
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+      
+
+    </script>
+  <script>
+    
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbywhaLDaCyO8Rd8Fb_G6WKA8c97J05rA4BxW-CAub7a1Lw71GLUWyYY9mIyBYpjpZao/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById("msg")
+      
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Thank you for your message, we will get back to you soon!"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })  
+          .catch(error => console.error('Error!', error.message));
+      });
+    
+    
+  </script>
+  <script>
+    
+      const reviewsScriptURL = 'https://script.google.com/macros/s/AKfycbw5nWI6Inmnmc1g05bVPYTZX8AGAZVAIvZCddBInN8QmuPYyqZHWTxGhvaN7mLlxHb2/exec';
+      const reviewsForm = document.forms['submit-review-form'];
+      const reviewsMsg = document.getElementById("review-msg");
+    
+      reviewsForm.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(reviewsScriptURL, { method: 'POST', body: new FormData(reviewsForm)})
+          .then(response => {
+            reviewsMsg.innerHTML = "Thank you for your review, we appreciate your feedback!";
+            setTimeout(() => {
+              reviewsMsg.innerHTML = ""
+            }, 5000);
+            reviewsForm.reset();
+          })
+          .catch(error => {
+            console.error('Error!', error.message);
+            reviewsMsg.innerHTML = "Failed to send review. Please try again!";
+          });
+      });
+    
+    
+  </script>
+  <script>
+    function openmenu() {
+        document.getElementById("sidemenu").style.right = "0"; // Adjust to show the menu
+    }
+    
+    function closemenu() {
+        document.getElementById("sidemenu").style.right = "-100%"; // Adjust to hide the menu
+    }
+    // Adding event listeners to close the menu when a link is clicked
+document.querySelectorAll('#sidemenu .highlight-link').forEach(item => {
+  item.addEventListener('click', function() {
+      closemenu();  // Close the sidebar when any link is clicked
+  });
+});
+    </script>
+    
+  </body>
+</html>

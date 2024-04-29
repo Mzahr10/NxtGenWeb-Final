@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
+    margin: 0; /* Removes the default margin of the body */
+  }
+  
+  img {
+    width: 50%;
+    height: 50%;
+    /* No need for align: center; */
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        margin: 0; /* Keeps margin zero in mobile view */
+    }
+    
+    img {
+        width: 100%; /* Width is 100% to fit the screen */
+        height: auto; /* Height is auto to maintain aspect ratio */
+        object-fit: cover; /* Ensures the image covers the area well */
+    }
+}
